@@ -23,31 +23,39 @@ const Header = () => {
           <NavLink href="/kids">Kids</NavLink>
           <NavLink href="/collections">Collections</NavLink>
         </Nav>
+        <HiddenDiv>
+        <IconWrapper>
+          <Logo />
+        </IconWrapper>
+        </HiddenDiv>
       </MainHeader>
     </header>
   );
 };
 
 const MainHeader = styled.div`
-position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: baseline;
   padding: 24px 32px;
   border-bottom: 1px solid ${COLORS.gray[300]};
 `;
 
-const IconWrapper = styled.div`
-   position: absolute;
-   top: 18px;
-   left: 32px;
+const HiddenDiv = styled.div`
+  visibility: hidden;
 `;
 
+
+const IconWrapper = styled.div`
+   margin-right: 64px;
+`;
 
 const Nav = styled.nav`
   display: flex;
   gap: 48px;
-  margin: 0px 370px;
+  align-self: center;
+  margin-right: auto;
+  margin-left: auto;
 `;
 
 const NavLink = styled.a`
