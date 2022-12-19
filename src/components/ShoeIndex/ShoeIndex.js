@@ -44,6 +44,7 @@ const ShoeIndex = ({ sortId, setSortId }) => {
 
 const Wrapper = styled.div`
   display: flex;
+  align-items: baseline;
   flex-direction: row-reverse;
 `;
 
